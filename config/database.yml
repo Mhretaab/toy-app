@@ -49,8 +49,11 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
   adapter: postgresql
-  database: toy_app_production
-  username: toyapp
-  password: <%= ENV['HELLOWORLD_DATABASE_PASSWORD'] %>
+  encoding: unicode
+  database: d90ag3545urvcc
+  host: ec2-107-20-188-239.compute-1.amazonaws.com
+  port: 5432
+  pool: 5
+  username: vfpwjytaresqbp
+  password: d2e6cf82df176367517fe59221b406bd4fbaff63cec9a963f6f4e0d47c3e39a1
