@@ -39,14 +39,15 @@ group :development, :test do
 end
 
 group :development do
-  gem 'sqlite3', '1.3.13'
+  # Use mysql as the database for Active Record
+  gem 'mysql2', '0.4.8'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
 end
 
 group :production do
-  # Use mysql as the database for Active Record
-  gem 'mysql2', '0.4.8'
+  gem 'pg'
+  gem 'rails_12factor', '0.0.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

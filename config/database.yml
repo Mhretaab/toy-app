@@ -50,6 +50,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: toy_app_production
   username: toyapp
   password: <%= ENV['HELLOWORLD_DATABASE_PASSWORD'] %>
