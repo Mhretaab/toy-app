@@ -56,4 +56,5 @@ production:
   port: 5432
   pool: 5
   username: vfpwjytaresqbp
-  password: d2e6cf82df176367517fe59221b406bd4fbaff63cec9a963f6f4e0d47c3e39a1
+  password: <%= ENV['TOY_DATABASE_PASSWORD'] %>
+
